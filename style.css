@@ -1,0 +1,175 @@
+@font-face {
+  font-family: MyFont;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: MyFonto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Charcoal-Grey);
+}
+
+h1 {
+  color: var(--Dark-Slate-Grey);
+  font-size: 45px;
+}
+
+.container-1{
+  display: flex;
+  width: 800px;
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.card {
+  width: 20px;
+}
+
+.left {
+  margin: 55px 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.right {
+  margin: 15px;
+}
+
+.right img {
+  margin: -8px;
+  height: 500px;
+}
+
+ul {
+  margin-left: -40px;
+}
+
+.input {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+
+#email {
+  font-size: 15px;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+
+input[type="email"] {
+  width: 300px;
+  height: 40px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 13px 55px;
+  margin-top: 15px;
+  border: none;
+  color: var(--White);
+  background-color: var(--Dark-Slate-Grey);
+}
+
+.container-2 {
+  background-color: var(--White);
+  width: 445px;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+img .container-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.dismiss-btn {
+  padding: 15px 120px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 12px;
+  margin-right: 90px;
+}
+
+.error-message {
+  color: orangered;
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.email-input.error::placeholder {
+  color: orangered;
+  background-color: rgb(235, 183, 183);
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+ }
+
+ .hide {
+  display: none;
+ }
+
+ @media (max-width: 768px) {
+  .container-1 {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+    border-radius: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container-1 h1 {
+    font-size: 30px;
+  }
+  .left {
+    width: 100%;
+    padding: 20px;
+    margin-top: -20px;
+  }
+  .right {
+    width: 100%;
+  }
+  .right img {
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+    margin-top: -20px;
+    width: 95%;
+    height: 270px;
+  }
+
+  button {
+    height: 43px;
+  }
+
+  form {
+    width: 95%;
+  }
+  .container-2 {
+    min-height: 100vh;
+  }
+}
